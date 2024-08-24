@@ -11,6 +11,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Photo } from "@/components/photo";
 import { Header } from "@/components/header";
+import { MainDescription } from "@/components/mainDescription";
 // import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Portfolio() {
@@ -18,20 +19,13 @@ export default function Portfolio() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header/>
+      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24">
           <div>
-            <div className="flex flex-col items-center">
+            <div className="flex items-center justify-around">
+              <MainDescription />
               <Photo />
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  {name}
-                </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Full Stack developer & Team Leader
-                </p>
-              </div>
             </div>
           </div>
         </section>

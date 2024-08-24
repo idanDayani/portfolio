@@ -14,7 +14,7 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      primary: "var(--font--jetbrainsMono)"
+      primary: "var(--font--jetbrainsMono)",
     },
     extend: {
       colors: {
@@ -22,6 +22,10 @@ module.exports = {
         accent: {
           DEFAULT: "#00ff99",
           hover: "#00e187",
+        },
+        yellow: {
+          DEFAULT: "#ff7f50",
+          1000: "#CCFF00",
         },
       },
     },
