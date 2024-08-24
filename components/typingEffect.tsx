@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 const TypingEffect: React.FC = () => {
@@ -7,13 +7,21 @@ const TypingEffect: React.FC = () => {
 
   useEffect(() => {
     const options = {
-      strings: [' React.', 'Node.js.', 'JavaScript.', 'TypeScript.', 'Tailwind CSS.'], 
+      strings: [
+        "Node.js.",
+        "React.",
+        "React Native.",
+        "JavaScript.",
+        "TypeScript.",
+        "MongoDB.",
+        "PostgreSQL.",
+      ],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 1000,
       loop: true,
       showCursor: true,
-      cursorChar: '|',
+      cursorChar: "|",
     };
 
     if (el.current) {
@@ -21,7 +29,7 @@ const TypingEffect: React.FC = () => {
     }
 
     return () => {
-      typed.current?.destroy(); // Cleanup animation on component unmount
+      typed.current?.destroy();
     };
   }, []);
 
