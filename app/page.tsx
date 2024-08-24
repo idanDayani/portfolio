@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -19,7 +17,7 @@ export default function Portfolio() {
   const name = "Idan Dayani";
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-r from-slate-800 via-gray-700 to-slate-600">
+    <div className="flex flex-col min-h-screen">
       <Header/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24">
