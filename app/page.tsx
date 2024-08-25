@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Photo } from "@/components/photo";
 import { Header } from "@/components/header";
 import { MainDescription } from "@/components/mainDescription";
-// import { Github, Linkedin, Mail } from "lucide-react";
+import { Footer } from "@/components/footer";
 
 export default function Portfolio() {
   const name = "Idan Dayani";
@@ -29,7 +29,7 @@ export default function Portfolio() {
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           id="about"
           className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
         >
@@ -103,27 +103,9 @@ export default function Portfolio() {
               </Button>
             </form>
           </div>
-        </section>
+        </section> */}
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">
-          © 2023 {name}. All rights reserved.
-        </p>
-        {/* <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            <span className="sr-only">GitHub</span>
-            <Github className="h-4 w-4" />
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            <span className="sr-only">LinkedIn</span>
-            <Linkedin className="h-4 w-4" />
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            <span className="sr-only">Email</span>
-            <Mail className="h-4 w-4" />
-          </Link>
-        </nav> */}
-      </footer>
+      <Footer/>
     </div>
   );
 }

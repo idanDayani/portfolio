@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export function Photo() {
   return (
@@ -34,7 +34,7 @@ export function Photo() {
             rotate: [120, 360],
           }}
           transition={{
-            duration: 20,
+            duration: 40,
             repeat: Infinity,
             repeatType: "reverse",
           }}
