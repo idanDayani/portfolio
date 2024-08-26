@@ -4,7 +4,6 @@ import Link from "next/link";
 import { GithubIcon } from "@/public/assets/icons/github";
 import { LinkedinIcon } from "@/public/assets/icons/linkedin";
 import { MailIcon } from "@/public/assets/icons/mail";
-import { Button } from "./ui/button";
 
 export function Footer() {
   const onClickEmail = () => {
