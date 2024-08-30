@@ -1,38 +1,43 @@
 import React from "react";
-import { ExpressLogo } from "@/public/assets/icons/express";
-import { MongoDBLogo } from "@/public/assets/icons/mongoDB";
-import { NextJSLogo } from "@/public/assets/icons/nextJS";
-import { NodeJSLogo } from "@/public/assets/icons/nodeJS";
-import { PostgresqlLogo } from "@/public/assets/icons/postgresql";
-import { ReactLogo } from "@/public/assets/icons/react";
-import { RedisLogo } from "@/public/assets/icons/redis";
-import { SnowFlakeLogo } from "@/public/assets/icons/snowFlake";
-import { TailwindLogo } from "@/public/assets/icons/tailwind";
-import { TypescriptLogo } from "@/public/assets/icons/typescript";
-import { VercelLogo } from "@/public/assets/icons/vercel";
+import { ExpressLogo } from "@/public/assets/logos/express";
+import { MongoDBLogo } from "@/public/assets/logos/mongoDB";
+import { NextJSLogo } from "@/public/assets/logos/nextJS";
+import { NodeJSLogo } from "@/public/assets/logos/nodeJS";
+import { PostgresqlLogo } from "@/public/assets/logos/postgresql";
+import { ReactLogo } from "@/public/assets/logos/react";
+import { RedisLogo } from "@/public/assets/logos/redis";
+import { SnowFlakeLogo } from "@/public/assets/logos/snowFlake";
+import { TailwindLogo } from "@/public/assets/logos/tailwind";
+import { TypescriptLogo } from "@/public/assets/logos/typescript";
+import { VercelLogo } from "@/public/assets/logos/vercel";
+import { PlaywrightLogo } from "@/public/assets/logos/playwright";
 
 export function MyStack() {
   return (
-    <div className="flex flex-col text-3xl mt-20">
+    <div className="flex flex-col text-3xl mt-20 items-center max-w-screen">
       <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-        My Stack
+        The Stack Behind My Work
       </h2>
-
-      <div className="flex flex-col items-center mt-5 mb-10">
+      <div className="flex flex-col items-center mt-10 mb-10 w-full">
         <div className="flex gap-44 mb-10">
           <ReactLogo />
           <NodeJSLogo />
+          <PlaywrightLogo/>
+        </div>
+
+        <div className="flex gap-44 mb-10">
           <MongoDBLogo />
           <PostgresqlLogo />
-          <TypescriptLogo />
+          <RedisLogo />
+          <SnowFlakeLogo />
         </div>
-        <div className="flex gap-40">
+
+        <div className="flex gap-40 w-full">
           <NextJSLogo />
           <TailwindLogo />
           <VercelLogo />
-          <RedisLogo />
-          <SnowFlakeLogo />
           <ExpressLogo />
+          <TypescriptLogo />
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
-import { AntDesignLogo } from "@/public/assets/icons/antDesign";
-import { JestLogo } from "@/public/assets/icons/jest";
-import { MobxLogo } from "@/public/assets/icons/mobx";
-import { MongoDBLogo } from "@/public/assets/icons/mongoDB";
-import { NestJSLogo } from "@/public/assets/icons/nestJS";
-import { ReactLogo } from "@/public/assets/icons/react";
+import { AntDesignLogo } from "@/public/assets/logos/antDesign";
+import { JestLogo } from "@/public/assets/logos/jest";
+import { MobxLogo } from "@/public/assets/logos/mobx";
+import { MongoDBLogo } from "@/public/assets/logos/mongoDB";
+import { NestJSLogo } from "@/public/assets/logos/nestJS";
+import { ReactLogo } from "@/public/assets/logos/react";
 import React from "react";
 
 export function TechnologiesUsed() {
