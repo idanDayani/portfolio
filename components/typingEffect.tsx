@@ -8,13 +8,14 @@ const TypingEffect: React.FC = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Node.js.",
         "React.",
-        "React Native.",
-        "JavaScript.",
-        "TypeScript.",
+        "Node.js.",
         "MongoDB.",
         "PostgreSQL.",
+        "JavaScript.",
+        "TypeScript.",
+        "Tailwind CSS.",
+        "React Native.",
       ],
       typeSpeed: 100,
       backSpeed: 50,

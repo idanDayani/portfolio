@@ -4,7 +4,7 @@ export function MainDescription() {
   return (
     <div className="space-y-2">
       <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-        Hellow, Im
+        Hellow, I&apos;m
       </h1>
       <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-yellow-1000">
         Idan Dayani

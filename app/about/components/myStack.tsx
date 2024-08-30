@@ -11,14 +11,14 @@ import { TailwindLogo } from "@/public/assets/icons/tailwind";
 import { TypescriptLogo } from "@/public/assets/icons/typescript";
 import { VercelLogo } from "@/public/assets/icons/vercel";
 
-export function Technologies() {
+export function MyStack() {
   return (
-    <div className="flex flex-col text-3xl mt-10">
+    <div className="flex flex-col text-3xl mt-20">
       <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-        Technologies
+        My Stack
       </h2>
 
-      <div className="flex flex-col items-center mt-20 mb-10">
+      <div className="flex flex-col items-center mt-5 mb-10">
         <div className="flex gap-44 mb-10">
           <ReactLogo />
           <NodeJSLogo />
