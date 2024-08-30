@@ -10,9 +10,8 @@ export function TechnologiesUsed() {
   return (
     <div className="flex flex-col mt-10">
       <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-        Technologies used:
+        Technologies used
       </h2>
-
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-40">
           <NestJSLogo />

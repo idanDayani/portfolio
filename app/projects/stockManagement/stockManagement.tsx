@@ -1,5 +1,6 @@
 import React from "react";
 import { TechnologiesUsed } from "./technologiesUsed";
+import { GitHubLinks } from "./gitHubLinks";
 
 export function StockManagement() {
   return (
@@ -11,7 +12,7 @@ export function StockManagement() {
           </h1>
           <p className="mt-4 text-muted-foreground max-w-3xl mx-auto">
             Manage your investment portfolio with ease. Track your stocks, get
-            real-time quotes, and make informed decisions.
+            real-time stocks data, and make informed decisions.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -20,21 +21,11 @@ export function StockManagement() {
               <h3 className="text-xl font-semibold">Save and Edit Portfolio</h3>
             </div>
             <p className="text-muted-foreground">
-              Users can easily save and edit their investment portfolio, keeping
-              track of their stocks and holdings.
+              Easily search for any stock, save and edit investment
+              portfolio, keeping track stocks and holdings.
             </p>
           </div>
-          <div className="bg-gradient-to-r from-[#2c2c34] to-[#3c3c44] rounded-lg p-6 space-y-4">
-            <div className="flex items-center gap-3">
-              <h3 className="text-xl font-semibold">
-                Navigate Between Portfolio and Stocks
-              </h3>
-            </div>
-            <p className="text-muted-foreground">
-              Users can seamlessly move between the portfolio page and
-              individual stock pages, allowing for a smooth user experience.
-            </p>
-          </div>
+
           <div className="bg-gradient-to-r from-[#2c2c34] to-[#3c3c44] rounded-lg p-6 space-y-4">
             <div className="flex items-center gap-3">
               <h3 className="text-xl font-semibold">
@@ -42,12 +33,26 @@ export function StockManagement() {
               </h3>
             </div>
             <p className="text-muted-foreground">
-              Users can see the latest stock quotes on each individual stock
-              page, helping them make informed investment decisions.
+              Watch the latest stock quotes on each individual stock
+              page, helping make informed investment decisions.
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-r from-[#2c2c34] to-[#3c3c44] rounded-lg p-6 space-y-4">
+            <div className="flex items-center gap-3">
+              <h3 className="text-xl font-semibold">
+                Monitor Stock Changes Over Time
+              </h3>
+            </div>
+            <p className="text-muted-foreground">
+              Track the performance of stocks with live. Analyze historical trends and market movements
+              to gain insights into your investments, making data-driven
+              decisions with confidence.
             </p>
           </div>
         </div>
         <TechnologiesUsed />
+        <GitHubLinks />
       </div>
     </div>
   );
