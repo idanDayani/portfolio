@@ -24,14 +24,12 @@ export function MyStack() {
           <NodeJSLogo />
           <PlaywrightLogo/>
         </div>
-
         <div className="flex gap-44 mb-10">
           <MongoDBLogo />
           <PostgresqlLogo />
           <RedisLogo />
           <SnowFlakeLogo />
         </div>
-
         <div className="flex gap-40 w-full">
           <NextJSLogo />
           <TailwindLogo />
