@@ -12,9 +12,13 @@ export default function About() {
       <div className="text-lg">
         I have been passionate about technology since my high school days, where
         I specialized in computer science. This early passion has driven my
-        career in software development. I am currently lead a team of full-stack
-        developers, focusing on building high-scale native applications and SaaS
-        products serving over 2 million users.
+        career in software development.
+      </div>
+
+      <div className="text-lg">
+        I am currently lead a team of full-stack developers, focusing on
+        building high-scale native applications and SaaS products serving over 2
+        million users.
       </div>
       <Technologies />
       <Experience />
