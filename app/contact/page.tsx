@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Contact() {
   return (
     <div className="flex flex-col my-10 mx-6 lg:m-20 p-2 lg:p-8">
