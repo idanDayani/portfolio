@@ -13,7 +13,7 @@ export function EducationDesc() {
         className="object-contain -mt-5"
       />
       <div className="flex flex-col ml-4">
-        <h2 className="text-2xl font-bold bg-gradient-to-r from-green-500 to-lime-500 bg-clip-text text-transparent">Holon Institute of Technology</h2>
+        <h2 className="text-xl font-bold bg-gradient-to-r from-green-500 to-lime-500 bg-clip-text text-transparent sm:text-2xl">Holon Institute of Technology</h2>
         <p className="text-base text-indigo-200">Bachelor of science in Computer Science</p>
         <p className="text-base text-indigo-200">2017 - 2020</p>
       </div>

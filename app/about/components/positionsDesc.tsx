@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export function PositionsDesc() {
   return (
-    <div className="ml-10 space-y-4">
+    <div className="ml-8 sm:ml-10 space-y-4">
       <div>
-        <h4 className="text-xl font-semibold text-blue-300">
+        <h4 className="text-lg font-semibold text-blue-300 sm:text-xl">
           Full Stack Developer & Team Lead
         </h4>
         <p className="text-base text-indigo-200">
@@ -12,7 +10,7 @@ export function PositionsDesc() {
         </p>
       </div>
       <div>
-        <h4 className="text-xl font-semibold text-blue-300">
+        <h4 className="text-lg font-semibold text-blue-300 sm:text-xl">
           BackEnd Developer
         </h4>
         <p className="text-base text-indigo-200">
@@ -20,7 +18,7 @@ export function PositionsDesc() {
         </p>
       </div>
       <div>
-        <h4 className="text-xl font-semibold text-blue-300">
+        <h4 className="text-lg font-semibold text-blue-300 sm:text-xl">
           Manual QA & Technical Operations Specialist
         </h4>
         <p className="text-base text-indigo-200">May 2019 - Dec 2019 · 8 mos</p>

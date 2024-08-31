@@ -4,8 +4,8 @@ import { PositionsDesc } from "./positionsDesc";
 
 export function Experience() {
   return (
-    <div className="flex flex-col text-3xl mb-8">
-      <h2 className="text-4xl font-extrabold mb-6 text-transparent text-yellow-300">
+    <div className="flex flex-col mb-8 mt-4">
+      <h2 className="text-3xl font-extrabold mb-6 text-transparent text-yellow-300 sm:text-4xl">
         Experience
       </h2>
       <div className="space-y-6">
