@@ -1,4 +1,10 @@
+import { getTotalExperience } from "@/app/common/getTotalExperience";
+
 export function PositionsDesc() {
+
+  const startDate = "2021-03-01";
+  const totalExperience = getTotalExperience(startDate);
+
   return (
     <div className="ml-8 sm:ml-10 space-y-4">
       <div>
@@ -6,7 +12,7 @@ export function PositionsDesc() {
           Full Stack Developer & Team Lead
         </h4>
         <p className="text-base text-indigo-200">
-          Mar 2021 - Present · 3 yrs 6 mos
+          Mar 2021 - Present · {totalExperience}
         </p>
       </div>
       <div>

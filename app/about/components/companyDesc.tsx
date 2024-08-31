@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { getTotalExperience } from "@/app/common/getTotalExperience";
 
 export function CompanyDesc() {
+
+  const startDate = "2019-05-01";
+  const totalExperience = getTotalExperience(startDate);
+
   return (
     <div className="flex -ml-12 mb-5">
       <Image
@@ -14,7 +19,7 @@ export function CompanyDesc() {
       />
       <div className="flex flex-col ml-4">
         <h3 className="text-2xl font-bold text-yellow-300">YuviTal</h3>
-        <p className="text-base text-indigo-200">Full-time · 5 yrs 4 mos</p>
+        <p className="text-base text-indigo-200">Full-time · {totalExperience}</p>
       </div>
     </div>
   );
