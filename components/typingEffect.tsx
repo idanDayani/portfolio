@@ -34,7 +34,7 @@ const TypingEffect: React.FC = () => {
     };
   }, []);
 
-  return <div className="text-xl text-yellow-1000" ref={el}></div>;
+  return <div className="text-lg lg:text-xl text-yellow-1000" ref={el}></div>;
 };
 
 export default TypingEffect;

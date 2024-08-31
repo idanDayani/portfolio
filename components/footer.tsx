@@ -11,9 +11,9 @@ export function Footer() {
   };
 
   return (
-    <footer className="py-8 px-4 md:px-6">
-      <div className="flex items-center justify-between md:items-start">
-        <div className="flex items-center space-x-4">
+    <footer className="p-6 sm:p-8">
+      <div className="flex items-center justify-between">
+        <div className="flex space-x-4">
           <Link
             href="https://github.com/idanDayani"
             target="_blank"
@@ -37,7 +37,7 @@ export function Footer() {
             <MailIcon />
           </div>
         </div>
-        <p className="mt-4 md:mt-0 text-sm text-muted-foreground">
+        <p className="text-sm text-muted-foreground">
           &copy; 2024 Idan Dayani.
         </p>
       </div>

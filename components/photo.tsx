@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function Photo() {
   return (
     <div>
-      <div className="w-[298px] h-[298px] absolute">
+      <div className="w-[198px] h-[198px] sm:w-[298px] sm:h-[298px] absolute">
         <Image
           src="/assets/idan.png"
           priority
@@ -16,7 +16,7 @@ export function Photo() {
         />
       </div>
       <motion.svg
-        className="w-[300px]"
+        className="w-[200px] sm:w-[300px]"
         fill="transparent"
         viewBox="0 0 506 506"
       >

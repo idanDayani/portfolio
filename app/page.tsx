@@ -4,7 +4,7 @@ import { MainDescription } from "@/components/mainDescription";
 
 export default function Portfolio() {
   return (
-    <div className="flex items-center justify-between m-20 p-8">
+    <div className="flex flex-col my-10 mx-6 items-center justify-between lg:flex-row sm:my-20 sm:mx-20 sm:p-2 lg:p-8">
       <MainDescription />
       <Photo />
     </div>

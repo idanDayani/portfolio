@@ -13,7 +13,7 @@ const links = [
 export function Nav() {
   const pathName = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-2 sm:gap-8">
       {links.map((link, index) => {
         const currentPath = pathName === link.href;
         return (
