@@ -15,7 +15,7 @@ export function MainDescription() {
           scalable, high-performance applications that drive business success.
         </div>
         <div className="flex flex-row">
-          <div className="text-lg md:text-xl mr-1">I'm experienced with</div>
+          <div className="text-lg md:text-xl mr-1">I&apos;m experienced with</div>
           <TypingEffect />
         </div>
       </div>
