@@ -30,7 +30,7 @@ export function MyStack() {
           <RedisLogo />
           <SnowFlakeLogo />
         </div>
-        <div className="flex gap-40 w-full">
+        <div className="flex gap-40">
           <NextJSLogo />
           <TailwindLogo />
           <VercelLogo />
