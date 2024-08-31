@@ -56,7 +56,7 @@ export function MyStack() {
 
   return (
     <div className="flex flex-col mt-20 items-center max-w-screen">
-      <h2 className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 sm:text-4xl text-center">
+      <h2 className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 sm:text-4xl">
         The Stack Behind My Work
       </h2>
       <div className="flex flex-col items-center mt-10 mb-10 w-full">

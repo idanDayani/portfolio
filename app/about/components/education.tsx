@@ -3,7 +3,7 @@ import { EducationDesc } from "./educationDesc";
 
 export function Education() {
   return (
-    <div className="flex flex-col text-3xl">
+    <div className="flex flex-col">
       <h2 className="text-3xl font-extrabold mb-6 bg-gradient-to-r from-green-500 to-lime-500 bg-clip-text text-transparent sm:text-4xl">
         Education
       </h2>
