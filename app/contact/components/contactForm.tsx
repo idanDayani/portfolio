@@ -1,10 +1,13 @@
 "use client";
+import { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
 import { Form } from "@/components/ui/form";
 import { FormContactField } from "./formContactField";
+import { LoadingSpinner } from "./loadingSpinner";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(50),
@@ -15,6 +18,8 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -26,8 +31,27 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     console.log(values);
+    setIsLoading(true);
+    try {
+      await emailjs.send(
+        "service_tiyen9e",
+        "template_wwo839j",
+        {
+          firstName: values.firstName,
+          lastName: values.lastName,
+          email: values.email,
+          subject: values.subject,
+          message: values.message,
+        },
+        "VXypsAxXtAewMOGKvI"
+      );
+    } catch (error) {
+      alert("There was an error sending your message. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -68,7 +92,9 @@ export function ContactForm() {
           isTextarea
         />
         <div className="mt-10" />
-        <Button type="submit">Submit</Button>
+        <Button type="submit" disabled={isLoading}>
+          {isLoading ? <LoadingSpinner /> : "Submit"}
+        </Button>
       </form>
     </Form>
   );
