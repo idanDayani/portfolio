@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Form } from "@/components/ui/form";
 import { FormContactField } from "./formContactField";
 import { LoadingSpinner } from "./loadingSpinner";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(50),
@@ -32,12 +34,11 @@ export function ContactForm() {
   });
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log(values);
     setIsLoading(true);
     try {
       await emailjs.send(
-        "service_tiyen9e",
-        "template_wwo839j",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
           firstName: values.firstName,
           lastName: values.lastName,
@@ -45,10 +46,11 @@ export function ContactForm() {
           subject: values.subject,
           message: values.message,
         },
-        "VXypsAxXtAewMOGKvI"
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
+      toast.success("Email sent successfully.");
     } catch (error) {
-      alert("There was an error sending your message. Please try again.");
+      toast.error("Error sending email, Try again.");
     } finally {
       setIsLoading(false);
     }
@@ -58,7 +60,7 @@ export function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-2/3 space-y-4 border p-8 rounded-xl"
+        className="w-2/3 space-y-2 border py-4 px-8 rounded-xl"
       >
         <FormContactField
           form={form}
@@ -92,10 +94,15 @@ export function ContactForm() {
           isTextarea
         />
         <div className="mt-10" />
-        <Button type="submit" disabled={isLoading}>
+        <Button
+          className="bg-yellow-1000 text-primary hover:bg-yellow-1000 hover:animate-pulse hover:animate-rotate-right-left transition duration-300"
+          type="submit"
+          disabled={isLoading}
+        >
           {isLoading ? <LoadingSpinner /> : "Submit"}
         </Button>
       </form>
+      <ToastContainer position="bottom-right" />
     </Form>
   );
 }

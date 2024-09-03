@@ -5,7 +5,7 @@ import { AboutMeDesc } from "./components/aboutMeDesc";
 
 export default function About() {
   return (
-    <div className="flex flex-col my-10 mx-6 lg:m-20 p-2 lg:p-8">
+    <div className="flex flex-col my-10 mx-6 p-2 lg:mx-20 lg:py-4 lg:px-8">
       <div className="text-5xl font-bold tracking-tighter lg:text-6xl/none mb-8 text-yellow-1000">
         About Me
       </div>

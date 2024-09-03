@@ -19,6 +19,15 @@ module.exports = {
       primary: "var(--font--jetbrainsMono)",
     },
     extend: {
+      keyframes: {
+        'rotate-right-left': {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+        },
+      },
+      animation: {
+        'rotate-right-left': 'rotate-right-left 0.5s ease-in-out',
+      },
       colors: {
         primary: "#1c1c22",
         accent: {

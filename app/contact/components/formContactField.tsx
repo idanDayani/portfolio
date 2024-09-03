@@ -27,7 +27,7 @@ export function FormContactField(props: {
           <FormLabel>{label}</FormLabel>
           <FormControl className="bg-primary">
             {isTextarea ? (
-              <Textarea placeholder={placeholder} {...field} className="h-32" />
+              <Textarea placeholder={placeholder} {...field} className="h-28" />
             ) : (
               <Input placeholder={placeholder} {...field} />
             )}

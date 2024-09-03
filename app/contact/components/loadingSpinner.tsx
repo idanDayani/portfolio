@@ -1,9 +1,9 @@
 export function LoadingSpinner() {
   return (
-    <div className="flex items-center gap-2 text-white" role="status">
+    <div className="flex items-center gap-2 text-primary" role="status">
       <svg
         aria-hidden="true"
-        className="inline w-6 h-6 text-white animate-spin dark:text-white fill-text-white dark:text-white"
+        className="inline w-6 h-6 text-primary animate-spin dark:text-primary fill-text-primary"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
