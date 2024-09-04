@@ -50,14 +50,14 @@ export default function EmailSendingAnimation() {
         Email Sent Successfully!
       </motion.h1>
       <motion.p
-        className="flex flex-col gap-y-5 w-2/3 sm:text-lg sm:w-full text-center mt-4"
+        className="flex flex-col gap-y-5 w-2/3 text-lg sm:w-full text-center mt-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 1.5, duration: 1 } }}
       >
         We will be in touch soon. Thank you for reaching out!
         <button
           onClick={() => router.push("/")}
-          className="px-4 py-1 sm:px-6 sm:py-3 bg-yellow-1000 text-primary rounded-lg font-bold hover:bg-yellow-1000 hover:animate-pulse transition duration-300"
+          className="px-4 py-1 sm:px-6 sm:py-3 bg-yellow-1000 text-primary  rounded-lg font-bold hover:bg-yellow-1000 hover:animate-pulse transition duration-300"
         >
           Return to Home
         </button>
