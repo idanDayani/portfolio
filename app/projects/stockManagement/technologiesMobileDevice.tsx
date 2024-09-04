@@ -12,7 +12,7 @@ export function TechnologiesMobileDevice() {
         Technologies used
       </h2>
       <div className="flex flex-col items-center">
-        <div className="flex items-center gap-20">
+        <div className="flex items-center gap-16">
           <NestJSLogo />
           <ReactLogo />
         </div>

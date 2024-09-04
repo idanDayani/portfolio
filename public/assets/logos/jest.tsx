@@ -3,7 +3,7 @@ export function JestLogo() {
     <svg
       height="150"
       preserveAspectRatio="xMidYMid"
-      width="150"
+      width="120"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="-165.83095323455666 -227.12219430273237 515.6590368124253 797.3960759087976"
     >

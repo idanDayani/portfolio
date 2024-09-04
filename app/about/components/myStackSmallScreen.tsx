@@ -18,7 +18,7 @@ export function MyStackSmallScreen() {
         The Stack Behind My Work
       </h2>
       <div className="flex flex-col items-center mt-10 mb-10 w-full gap-y-4">
-        <div className="flex gap-20 sm:gap-44">
+        <div className="flex gap-16 sm:gap-44">
           <ReactLogo />
           <NodeJSLogo />
         </div>
@@ -26,7 +26,7 @@ export function MyStackSmallScreen() {
           <MongoDBLogo />
           <PostgresqlLogo />
         </div>
-        <div className="flex gap-14 sm:gap-44">
+        <div className="flex gap-10 sm:gap-44">
           <RedisLogo />
           <SnowFlakeLogo />
         </div>
@@ -34,7 +34,7 @@ export function MyStackSmallScreen() {
           <NextJSLogo />
           <TailwindLogo />
         </div>
-        <div className="flex gap-20 sm:gap-44">
+        <div className="flex gap-12 sm:gap-44">
           <ExpressLogo />
           <VercelLogo />
         </div>

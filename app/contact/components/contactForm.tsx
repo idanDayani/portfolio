@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
@@ -21,6 +22,7 @@ const formSchema = z.object({
 
 export function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -48,7 +50,7 @@ export function ContactForm() {
         },
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
-      toast.success("Email sent successfully.");
+      router.push("/contactSuccess");
     } catch (error) {
       toast.error("Error sending email, Try again.");
     } finally {
@@ -60,7 +62,7 @@ export function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-2/3 space-y-2 border py-4 px-8 rounded-xl"
+        className="sm:w-2/3 space-y-2 border py-4 px-8 rounded-xl"
       >
         <FormContactField
           form={form}
