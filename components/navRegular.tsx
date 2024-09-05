@@ -1,19 +1,13 @@
-"use client";
 import Link from "next/link";
-import React from "react";
-import { usePathname } from "next/navigation";
 
-const links = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
-];
+export function NavRegular(props: {
+  links: { name: string; href: string }[];
+  pathName: string;
+}) {
+  const { links, pathName } = props;
 
-export function Nav() {
-  const pathName = usePathname();
   return (
-    <nav className="flex gap-2 sm:gap-8">
+    <nav className="hidden sm:flex gap-2 sm:gap-8">
       {links.map((link, index) => {
         const currentPath = pathName === link.href;
         return (
