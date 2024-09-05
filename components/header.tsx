@@ -3,12 +3,13 @@ import { NavHamburger } from "./navHamburger";
 import { usePathname } from "next/navigation";
 import { LogoLink } from "./logoLink";
 import { NavRegular } from "./navRegular";
+import { urls } from "@/app/common/urls";
 
 const links = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: urls.HOME },
+  { name: "About", href: urls.ABOUT },
+  { name: "Projects", href: urls.PROJECTS },
+  { name: "Contact", href: urls.CONTACT },
 ];
 
 export function Header() {

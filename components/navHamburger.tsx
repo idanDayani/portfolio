@@ -17,7 +17,7 @@ export function NavHamburger(props: {
     <>
       <Hamburger isOpen={isOpen} onClick={handleClick} />
       {isOpen && (
-        <div className="flex flex-col fixed inset-0 z-40 bg-[#1c1c22] bg-opacity-90 items-center justify-center space-y-6">
+        <div className="flex flex-col fixed inset-0 z-40 bg-[#1c1c22] bg-opacity-70 backdrop-blur-md items-center justify-center space-y-6">
           {links.map((link, index) => {
             const currentPath = pathName === link.href;
             return (

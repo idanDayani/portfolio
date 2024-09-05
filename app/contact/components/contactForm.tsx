@@ -11,6 +11,7 @@ import { FormContactField } from "./formContactField";
 import { LoadingSpinner } from "./loadingSpinner";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { urls } from "@/app/common/urls";
 
 const formSchema = z.object({
   firstName: z.string().min(2).max(50),
@@ -50,7 +51,7 @@ export function ContactForm() {
         },
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
-      router.push("/contactSuccess");
+      router.push(urls.CONTACT_SUCCESS);
     } catch (error) {
       toast.error("Error sending email, Try again.");
     } finally {
