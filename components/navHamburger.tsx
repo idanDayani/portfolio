@@ -1,14 +1,12 @@
-"use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
-import { LogoLink } from "./logoLink";
 
 export function NavHamburger(props: {
   links: { name: string; href: string }[];
+  pathName: string;
 }) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const pathName = usePathname();
+  const { links, pathName } = props;
 
   const firstSpanStyle = isOpen
     ? "group-hover:translate-y-1.5 group-hover:rotate-45"
@@ -24,7 +22,7 @@ export function NavHamburger(props: {
   return (
     <>
       <div
-        className="group flex h-20 w-20 z-50 cursor-pointer items-center justify-center rounded-3xl p-2"
+        className="group flex h-20 w-20 z-50 cursor-pointer items-center justify-center rounded-3xl p-2 sm:hidden"
         onClick={handleClick}
       >
         <div className="space-y-2">
@@ -39,7 +37,7 @@ export function NavHamburger(props: {
 
       {isOpen && (
         <div className="flex flex-col fixed inset-0 z-40 bg-[#1c1c22] bg-opacity-90 items-center justify-center space-y-4">
-          {props.links.map((link, index) => {
+          {links.map((link, index) => {
             const currentPath = pathName === link.href;
             return (
               <Link
