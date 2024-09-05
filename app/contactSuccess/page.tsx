@@ -1,4 +1,4 @@
-"use client"; // Ensure this component is client-side
+"use client";
 import EmailSendingAnimation from "./sentEmailAnimation";
 
 export default function ContactSuccess() {
