@@ -5,6 +5,7 @@ import { InventoryManagement } from "./inventoryManagement/inventoryManagement";
 import { ExpoBoltAIApp } from "./expoBoltAIApp/expoBoltAIApp";
 import { Tabs } from "./tabs/tabs";
 import { TabsEnum } from "./tabs/tabsTypes";
+import { BitcoinWalletTracker } from "./bitcoinWalletTracker/bitcoinWalletTracker";
 
 export default function Projects() {
     const [activeTab, setActiveTab] = useState(TabsEnum.stockManagement);
@@ -16,6 +17,7 @@ export default function Projects() {
             <div className="p-6 bg-gradient-to-r from-[#1c1c22] to-[#2c2c34] rounded-b-lg shadow-lg">
                 {activeTab === TabsEnum.stockManagement && <StockManagement />}
                 {activeTab === TabsEnum.expoBoltAIApp && <ExpoBoltAIApp />}
+                {activeTab === TabsEnum.bitcoinWalletTracker && <BitcoinWalletTracker />}
                 {activeTab === TabsEnum.inventoryManagement && <InventoryManagement />}
             </div>
         </div>
