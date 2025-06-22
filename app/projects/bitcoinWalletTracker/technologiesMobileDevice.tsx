@@ -1,6 +1,7 @@
 import { KafkaLogo } from "@/public/assets/logos/kafka";
 import { NextJSLogo } from "@/public/assets/logos/nextJS";
 import { WebsocketLogo } from "@/public/assets/logos/websocket";
+import { DockerLogo } from "@/public/assets/logos/docker";
 
 export function TechnologiesMobileDevice() {
     return (
@@ -9,6 +10,7 @@ export function TechnologiesMobileDevice() {
             <div className="flex flex-col items-center">
                 <div className="flex items-center gap-12">
                     <KafkaLogo />
+                    <DockerLogo />
                 </div>
                 <div className="flex items-center pt-2">
                     <WebsocketLogo />

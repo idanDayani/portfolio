@@ -11,7 +11,7 @@ export function TechnologiesMobileDevice() {
                     <ExpoLogo />
                     <ReactNativeLogo />
                 </div>
-                <div className="flex items-center pt-6">
+                <div className="flex items-center">
                     <BoltNewLogo />
                 </div>
             </div>

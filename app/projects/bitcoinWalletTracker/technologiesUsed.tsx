@@ -5,6 +5,7 @@ import { KafkaLogo } from "@/public/assets/logos/kafka";
 import { NextJSLogo } from "@/public/assets/logos/nextJS";
 import { WebsocketLogo } from "@/public/assets/logos/websocket";
 import { TechnologiesMobileDevice } from "./technologiesMobileDevice";
+import { DockerLogo } from "@/public/assets/logos/docker";
 
 export function TechnologiesUsed() {
     const { width } = useWindowSize();
@@ -19,9 +20,10 @@ export function TechnologiesUsed() {
             <h2 className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 md:text-4xl sm:text-left">Technologies used</h2>
             <div className="flex flex-col items-center">
                 <div className="flex items-center gap-6 sm:gap-20 md:gap-40">
+                    <DockerLogo />
                     <KafkaLogo />
-                    <NextJSLogo />
                     <WebsocketLogo />
+                    <NextJSLogo />
                 </div>
             </div>
         </div>
